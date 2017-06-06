@@ -1,0 +1,27 @@
+// Strips values of their units.
+// https://css-tricks.com/snippets/sass/strip-unit-function/
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+// `$zero-safe` value returns a 0 has a unit (e.g. 0rem, 0%)
+@function zero-safe($value) {
+  @return if($value == 0, 0, $value);
+}
+
+// Converts one px value to rem.
+@function px-to-rem($px-value) {
+  $rem-value: $px-value / $font-size-base * 1rem;
+  @return zero-safe($rem-value);
+}
+
+// Converts single or multiple px values into rem.
+// Accepts multiple values in the form: `rem(20px 30px 0 40px)` &
+// returns `1.25rem 1.875rem 0 2.5rem`.
+@function rem($px-values) {
+  $rem-values: ();
+  @each $px-value in $px-values {
+    $rem-values: append($rem-values, px-to-rem($px-value));
+  }
+  @return $rem-values;
+}

@@ -1,0 +1,47 @@
+// Each vertical-space-units row (v-space unit row) represents a v-space unit.
+// Each column (v-space size) represents a v-space unit’s size at:
+// (1) below sm, (2) above sm, (3) above md
+$vertical-space-units: (
+  (0.375rem, 0.5rem, 0.75rem),
+  (  0.5rem,   1rem,  1.5rem),
+  (  1.5rem,   2rem,    3rem),
+  ( 2.25rem,   3rem,  4.5rem),
+  (    3rem,   4rem,    6rem)
+);
+
+@mixin space-units($v-space-size) {
+  @for $v-space-unit-number from 1 through length($vertical-space-units) {
+    $v-space-unit: nth($vertical-space-units, $v-space-unit-number);
+    $space-types: (m: margin, p: padding);
+    // Ordering $space-sides in the order:
+    // (t, y, b) significantly shortens compiled code
+    $space-sides: (t: top, y: top bottom, b: bottom);
+
+    @each $space-type-label, $space-type in $space-types {
+      @each $space-side-label, $space-side in $space-sides {
+        @include v-space-selector($space-type-label, $space-side-label, $v-space-unit-number) {
+          @include v-space-declarations($space-type, $space-side, $v-space-unit, $v-space-size)
+        }
+      }
+    }
+  }
+}
+
+@mixin v-space-selector($space-type-label, $space-side-label, $v-space-unit-number) {
+  .#{$space-type-label}#{$space-side-label}-#{$v-space-unit-number} {
+    @content
+  }
+}
+
+@mixin v-space-declarations($space-type, $space-side, $v-space-unit, $v-space-size) {
+  @if type-of($space-side) != "list" {
+    #{$space-type}-#{$space-side}: nth($v-space-unit, $v-space-size);
+  } @else {
+    #{$space-type}-#{nth($space-side, 1)}: nth($v-space-unit, $v-space-size);
+    #{$space-type}-#{nth($space-side, 2)}: nth($v-space-unit, $v-space-size);
+  }
+}
+
+@include space-units(1);
+@include above($breakpoint-sm) { @include space-units(2) };
+@include above($breakpoint-md) { @include space-units(3) };

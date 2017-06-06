@@ -1,0 +1,11 @@
+$grid-columns:              12 !default;
+$grid-container-width:      1280px !default;
+
+// Default pixel values are based on 16px rem value.
+$grid-gutter-width-sm:      0.75rem !default;  // 12px
+$grid-gutter-width-md:      1rem !default;     // 16px
+$grid-gutter-width-lg:      1.125rem !default; // 18px
+$grid-gutter-width-xl:      1.5rem !default;   // 24px
+
+// Edge gutters are removed above breakpoint-lg
+$grid-edge-gutter-width:    1.5rem !default;
