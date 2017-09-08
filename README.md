@@ -3,7 +3,9 @@
 
 ## Contents
 - [Requirements](#requirements)
-- [What's Included](#whats-included) 
+- [Getting started](#getting-started)
+- [What's included](#whats-included) 
+- [Customisation](#customisation) 
 
 ## Requirements
 This project uses [NPM 5](https://www.npmjs.com/) for node dependencies. NPM 5 depends on [Node JS](https://nodejs.org)
