@@ -16,6 +16,11 @@ v4 and above.
 $ npm install git+ssh://git@github.com/inlight-media/inlight-styles.git
 ```
 
+Then include [all.scss](./scss/all.scss) in your stylesheets.
+```SCSS
+@import '~inlight-styles/scss/all';
+```
+
 ## What's included
 Inlight Styles provides the [Bootstrap 4](http://getbootstrap.com/) grid system. Documentation
 can be found [here](https://getbootstrap.com/docs/4.0/layout/grid/).
