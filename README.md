@@ -23,8 +23,8 @@ Then include [all.scss](./scss/all.scss) in your stylesheets.
 
 ## What's included
 - [Bootstrap Reboot](https://getbootstrap.com/docs/4.0/content/reboot/) which builds on
-[Normalize](https://necolas.github.io/normalize.css) to provide cross browser consistency and
-provide an elegant baseline to build upon.
+[Normalize](https://necolas.github.io/normalize.css). This ensures cross browser consistency and provides an elegant
+baseline to build upon.
 - The [Bootstrap 4](http://getbootstrap.com/) grid system. Documentation
 can be found [here](https://getbootstrap.com/docs/4.0/layout/grid/).
 
