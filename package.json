@@ -1,6 +1,6 @@
 {
   "name": "inlight-styles",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "main": "",
   "scripts": {
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/inlight-media/inlight-styles/issues"
   },
-  "homepage": "https://github.com/inlight-media/inlight-styles#readme"
+  "homepage": "https://github.com/inlight-media/inlight-styles#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta"
+  }
 }

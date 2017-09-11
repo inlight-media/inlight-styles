@@ -1,0 +1,20 @@
+// To override the configuration of the grid, create a file with these variables and adjust as necessary.
+// Include this file _before_ scss/all.scss or scss/bootstrap_grid.scss
+
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
