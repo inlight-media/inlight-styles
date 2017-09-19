@@ -27,6 +27,8 @@ Then include [all.scss](./scss/all.scss) in your stylesheets.
 baseline to build upon.
 - The [Bootstrap 4](http://getbootstrap.com/) grid system. Documentation
 can be found [here](https://getbootstrap.com/docs/4.0/layout/grid/).
+- Some [typography utility classes](https://getbootstrap.com/docs/4.0/content/typography/#text-utilities) like
+`text-center` and `text-justify`. 
 
 ## Customisation
 Bootstrap 4 provides plenty of opportunities to override its defaults. Example customisations
