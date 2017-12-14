@@ -27,8 +27,8 @@ Then include [all.scss](./scss/all.scss) in your stylesheets.
 baseline to build upon.
 - The [Bootstrap 4](http://getbootstrap.com/) grid system. Documentation
 can be found [here](https://getbootstrap.com/docs/4.0/layout/grid/).
-- Some [Bootstrap 4](http://getbootstrap.com/) display utilities to how elements should be displayed at each breakpoint. 
-Documentation can be found [here](https://getbootstrap.com/docs/4.0/utilities/display/).
+- Some [Bootstrap 4](http://getbootstrap.com/) display utilities to control how elements should be displayed at each
+breakpoint. Documentation can be found [here](https://getbootstrap.com/docs/4.0/utilities/display/).
 
 ## Customisation
 Bootstrap 4 provides plenty of opportunities to override its defaults. Example customisations
