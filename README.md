@@ -27,6 +27,9 @@ Then include [all.scss](./scss/all.scss) in your stylesheets.
 baseline to build upon.
 - The [Bootstrap 4](http://getbootstrap.com/) grid system. Documentation
 can be found [here](https://getbootstrap.com/docs/4.0/layout/grid/).
+- The [Bootstrap 4](http://getbootstrap.com/) breakpoint mixins e.g. `media-breakpoint-up()` and
+`media-breakpoint-down()`. Documentation can be found
+[here](https://getbootstrap.com/docs/4.0/migration/#responsive-utilities).
 - Some [Bootstrap 4](http://getbootstrap.com/) display utilities to control how elements should be displayed at each
 breakpoint. Documentation can be found [here](https://getbootstrap.com/docs/4.0/utilities/display/).
 
