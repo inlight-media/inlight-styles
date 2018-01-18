@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/inlight-media/inlight-styles#readme",
   "dependencies": {
-    "bootstrap": "^4.0.0-beta"
+    "bootstrap": "^4.0.0"
   }
 }
