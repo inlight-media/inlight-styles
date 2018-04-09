@@ -22,16 +22,16 @@ Then include [all.scss](./scss/all.scss) in your stylesheets.
 ```
 
 ## What's included
-- [Bootstrap Reboot](https://getbootstrap.com/docs/4.0/content/reboot/) which builds on
+- [Bootstrap Reboot](https://getbootstrap.com/docs/4.1/content/reboot/) which builds on
 [Normalize](https://necolas.github.io/normalize.css). This ensures cross browser consistency and provides an elegant
 baseline to build upon.
 - The [Bootstrap 4](http://getbootstrap.com/) grid system. Documentation
-can be found [here](https://getbootstrap.com/docs/4.0/layout/grid/).
+can be found [here](https://getbootstrap.com/docs/4.1/layout/grid/).
 - The [Bootstrap 4](http://getbootstrap.com/) breakpoint mixins e.g. `media-breakpoint-up()` and
 `media-breakpoint-down()`. Documentation can be found
-[here](https://getbootstrap.com/docs/4.0/migration/#responsive-utilities).
+[here](https://getbootstrap.com/docs/4.1/migration/#responsive-utilities).
 - Some [Bootstrap 4](http://getbootstrap.com/) display utilities to control how elements should be displayed at each
-breakpoint. Documentation can be found [here](https://getbootstrap.com/docs/4.0/utilities/display/).
+breakpoint. Documentation can be found [here](https://getbootstrap.com/docs/4.1/utilities/display/).
 
 ## Customisation
 Bootstrap 4 provides plenty of opportunities to override its defaults. Example customisations
