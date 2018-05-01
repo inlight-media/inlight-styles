@@ -1,7 +1,7 @@
 {
   "name": "inlight-styles",
-  "version": "0.1.4",
-  "description": "",
+  "version": "0.1.5",
+  "description": "Base styles for Inlight projects",
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,12 +11,12 @@
     "url": "git+https://github.com/inlight-media/inlight-styles.git"
   },
   "author": "",
-  "license": "MIT",
+  "private": true,
   "bugs": {
     "url": "https://github.com/inlight-media/inlight-styles/issues"
   },
   "homepage": "https://github.com/inlight-media/inlight-styles#readme",
   "dependencies": {
-    "bootstrap": "^4.1.0"
+    "bootstrap": "^4.1.1"
   }
 }
